@@ -61,9 +61,9 @@ gogh_colors
     if [ $(uname) = "Darwin" ]; then
         # OSX ships with curl and ancient bash
         # Note: here, sourcing directly from curl does not work
-        curlsource https://raw.githubusercontent.com/Mayccoll/Gogh/master/apply-colors.sh
+        curlsource https://raw.githubusercontent.com/filipecifali/Gogh/master/apply-colors.sh
     else
         # Linux ships with wget
-        source <(wget -O - https://raw.githubusercontent.com/Mayccoll/Gogh/master/apply-colors.sh)
+        source <(wget -O - https://raw.githubusercontent.com/filipecifali/Gogh/master/apply-colors.sh)
     fi
 fi
