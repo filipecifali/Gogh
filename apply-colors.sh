@@ -86,7 +86,7 @@ if [ $OS = "Darwin" ]; then
     # | ===========================================
     TERMINAL=$TERM_PROGRAM
 else  
-    TERMINAL=$(ps -p $(ps -p $(ps -p $$ -o ppid=) -o ppid=) -o args=)
+    TERMINAL=$(ps -p $(pgrep -f terminal) -o args=)
 fi
 
 # |
